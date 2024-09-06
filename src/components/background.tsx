@@ -19,6 +19,7 @@ const Background: React.FC<BackgroundProps> = ({ theme }) => {
         break;
       case 'retro':
         bgClass = 'bg-retro-theme';
+        break;
       case 'valentine':
         bgClass = 'bg-light-theme';
         break;
@@ -29,7 +30,9 @@ const Background: React.FC<BackgroundProps> = ({ theme }) => {
 
   return (
     <div className={`absolute inset-0 -z-10 h-full w-full px-5 py-24 ${bgClass}`}>
-        <StarsBackground/>
+         {theme === 'dark' && (
+        <StarsBackground starDensity={0.00035} twinkleProbability={0.7} />
+      )}    
     </div>
   );
 }
