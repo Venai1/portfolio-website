@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     // synthwave, dracula, night, winter, sunset
-    <html lang="en" data-theme="dark">
+    <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   );
