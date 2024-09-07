@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
           <div className="grid place-items-center">
             <div className="text-neutral-content text-6xl lg:text-7xl font-extrabold pb-4 text-center">
               {/* Ensure "Hello, I'm" and "Venai" stack on smaller screens */}
-              <h1 className="block sm:inline">Hello, I'm </h1>
+              <h1 className="block sm:inline">Hello, I&apos;m </h1>
               <h1 className="text-transparent bg-clip-text bg-gradient-to-br to-accent from-primary block sm:inline">
                 Venai
               </h1>

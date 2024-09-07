@@ -35,7 +35,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-transparent font-sans md:px-10"
+      className="w-full bg-transparent font-sans md:px-10 pb-10"
       ref={containerRef}
     >
       <div className="max-w-7xl mx-auto px-4 pt-20 md:px-8 lg:px-10">
@@ -79,7 +79,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 </motion.h3>
               </div>
 
-              <div className="relative pl-20 pr-4 md:pl-4 w-full">
+              <div className="relative pl-20 pr-4 md:pl-4 w-full text-2xl">
                 <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-[#63e] font-serif">
                   {item.title}
                 </h3>
