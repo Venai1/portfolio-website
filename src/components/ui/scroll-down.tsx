@@ -38,11 +38,10 @@ const ScrollIndicator: React.FC = () => {
 
   const arrowStyle = {
     position: 'fixed',
-    bottom: '50px',
+    bottom: '20px',
     left: '50%',
     transform: 'translateX(-50%)',
     fontSize: '30px',
-    color: '#333',
     opacity: fadeArrow ? 0 : 1,
     transition: 'opacity 0.5s ease', 
     ...bounceKeyframes,
@@ -51,7 +50,7 @@ const ScrollIndicator: React.FC = () => {
   return (
     <>
       <style>{bounceStyle}</style>
-      <div style={arrowStyle}>↓</div>
+      <div style={arrowStyle}><p className='text-transparent bg-clip-text bg-gradient-to-br to-accent from-primary'>↓</p></div>
     </>
   );
 };

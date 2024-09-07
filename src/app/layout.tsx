@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import '../app/globals.css';
+import StarsCanvas from "@/components/ui/stars-background";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,11 @@ export default function RootLayout({
   return (
     // synthwave, dracula, night, winter, sunset
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <StarsCanvas/>
+      {children}
+      </body>
+      
     </html>
   );
 }

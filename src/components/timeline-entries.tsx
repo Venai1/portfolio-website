@@ -39,7 +39,7 @@ const data = [
 
 const TimelineDemo = () => {
   return (
-    <div className="min-h-screen bg-transparent">
+    <div className="min-h-screen bg-transparent z-20">
       <Timeline data={data} />
     </div>
   );

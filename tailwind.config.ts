@@ -14,7 +14,7 @@ const config: Config = {
     extend: {
       backgroundImage: { 
         'light-theme': 'radial-gradient(125% 125% at 50% 10%, #f0f0f0 40%, #d0d0d0 100%)',
-        'dark-theme': 'radial-gradient(125% 125% at 50% 10%, #000 40%, #0047AB 100%)',
+        'dark-theme': 'radial-gradient(125% 125% at 50% 10%, #030014 50%, #63e 100%)',
         'sunset-theme': 'radial-gradient(125% 125% at 50% 10%, #001133 30%, #ff5f6d 100%)',
         'retro-theme': 'radial-gradient(125% 125% at 50% 10%, #f0f0f0 40%, #0047AB 100%)',
       },
@@ -26,7 +26,15 @@ const config: Config = {
   ],
   // daisyUI config (optional - here are the default values)
   daisyui: {
-    themes: true, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
+    themes: [{
+      dark: {
+        ...require("daisyui/src/theming/themes")["light"],
+        primary: "63e",
+        secondary: "red",
+        accent: "#d16aff"
+        },
+      },
+      "light"], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
     darkTheme: "dark", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components
@@ -37,7 +45,6 @@ const config: Config = {
   },
 };
 export default config;
-
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: any) {
