@@ -11,7 +11,7 @@ const StarBackground = (props: any) => {
   
   // useMemo to ensure the sphere's positions are recalculated on every refresh
   const sphere = useMemo(() => 
-    random.inSphere(new Float32Array(2500), { radius: 1.2 }), []
+    random.inSphere(new Float32Array(1500), { radius: 1.2 }), []
   );
 
   useFrame((state, delta) => {
@@ -51,8 +51,8 @@ const StarsCanvas = () => {
   }, []);
 
   return isReady ? (
-    <div className="w-full h-auto fixed inset-0 z-[20]">
-      <Canvas camera={{position: [0, 0, 1]}}>
+    <div className="w-full h-full fixed z-[5]"> {/* Set z-index to 0 for the stars */}
+      <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <StarBackground />
         </Suspense>
@@ -62,3 +62,4 @@ const StarsCanvas = () => {
 };
 
 export default StarsCanvas;
+
