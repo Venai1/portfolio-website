@@ -6,6 +6,7 @@ import { AboutMe } from "@/components/about-me";
 import Skills from "@/components/ui/skills";
 import StarsCanvas from "@/components/ui/stars-background";
 import Projects from "@/components/projects";
+import { ContactUs } from "@/components/contact-me";
 
 export default function Home() {
 
@@ -13,12 +14,14 @@ export default function Home() {
     <main className="min-h-screen flex-col relative bg-transparent overflow-hidden select-none">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
     <Background theme='dark' />
+    
     <StarsCanvas />
     <HeroSection/>
     <AboutMe/>
     <TimelineDemo/>
     <Skills/>
     <Projects/>
+    <ContactUs/>
     </main>
   );
 }
