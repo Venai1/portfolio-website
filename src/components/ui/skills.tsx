@@ -53,18 +53,65 @@ export default function Skills() {
   return (
     <div className="relative z-[40]">
       <h1 className='text-6xl lg:text-7xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-br from-primary to-accent pb-5 font-serif'>My Skills</h1>
-    
+      <h3 className="text-2xl text-neutral-content text-center max-w-3xl mx-auto pb-10">
+                I&apos;ve worked with a variety of framework, languages and tools during my time at school and in the industry.
+                <br />
+                Here are some of the technologies I&apos;ve worked with:
+      </h3>
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        
+        {/* Languages */}
+        <div>
+          <h4 className="text-2xl font-semibold text-accent pb-3">Languages</h4>
+          <ul className="text-xl font-semibold list-none space-y-2 text-neutral-content">
+            <li>Python</li>
+            <li>C/C++</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>Swift</li>
+          </ul>
+        </div>
+        
+        {/* Frameworks */}
+        <div>
+          <h4 className="text-2xl font-semibold text-accent pb-3">Frameworks</h4>
+          <ul className="list-none text-xl font-semibold space-y-2 text-neutral-content">
+            <li>JUnit</li>
+            <li>Selenium</li>
+            <li>XCTest</li>
+            <li>SwiftUI</li>
+            <li>GamePlayKit</li>
+          </ul>
+        </div>
+        
+        {/* Developer Tools */}
+        <div>
+          <h4 className="text-2xl font-semibold text-accent pb-3">Developer Tools</h4>
+          <ul className="list-none text-xl font-semibold space-y-2 text-neutral-content">
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>PyCharm</li>
+            <li>IntelliJ</li>
+            <li>Xcode</li>
+          </ul>
+        </div>
+        
+        {/* Libraries */}
+        <div>
+          <h4 className="text-2xl font-semibold text-accent pb-3">Libraries</h4>
+          <ul className="list-none text-xl font-semibold space-y-2 text-neutral-content">
+            <li>POSIX</li>
+            <li>NumPy</li>
+            <li>pandas</li>
+            <li>Flask</li>
+            <li>Spring Boot</li>
+          </ul>
+        </div>
+        
+      </div>
+      
       <div className="flex justify-center items-center">
         <div className="pb-10">
-          <div className="scroller" data-direction="left" data-speed="fast">
-            <div className="scroller__inner flex justify-center items-center space-x-4">
-              <IconWithTooltip src={Python.src} alt="Python Logo" label="Python" />
-              <IconWithTooltip src={Swift.src} alt="Swift Logo" label="Swift" />
-              <IconWithTooltip src={CPlusPlus.src} alt="C++ Logo" label="C++" />
-              <IconWithTooltip src={Kotlin.src} alt="Kotlin Logo" label="Kotlin" />
-              <IconWithTooltip src={MongoDB.src} alt="MongoDB Logo" label="MongoDB" />
-            </div>
-          </div>
           <div className="scroller mt-8" data-direction="right" data-speed="fast">
             <div className="scroller__inner flex justify-center items-center space-x-4">
               <IconWithTooltip src={NextJS.src} alt="Next.js Logo" label="Next.js" />
@@ -72,6 +119,11 @@ export default function Skills() {
               <IconWithTooltip src={ReactLogo.src} alt="React Logo" label="React" />
               <IconWithTooltip src={xcode.src} alt="Xcode Logo" label="Xcode" />
               <IconWithTooltip src={typescript.src} alt="TypeScript Logo" label="TypeScript" />
+              <IconWithTooltip src={Python.src} alt="Python Logo" label="Python" />
+              <IconWithTooltip src={Swift.src} alt="Swift Logo" label="Swift" />
+              <IconWithTooltip src={CPlusPlus.src} alt="C++ Logo" label="C++" />
+              <IconWithTooltip src={Kotlin.src} alt="Kotlin Logo" label="Kotlin" />
+              <IconWithTooltip src={MongoDB.src} alt="MongoDB Logo" label="MongoDB" />
             </div>
           </div>
         </div>

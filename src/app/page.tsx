@@ -8,6 +8,7 @@ import StarsCanvas from "@/components/ui/stars-background";
 import Projects from "@/components/projects";
 import { ContactUs } from "@/components/contact-me";
 
+
 export default function Home() {
 
   return (
