@@ -41,7 +41,7 @@ export const ContactUs: React.FC = () => {
   return (
     <div className="relative z-40 flex justify-center items-center min-h-screen bg-transparent">
       <div className="bg-[#00000134] shadow-lg rounded-lg p-6 w-full max-w-lg border border-neutral-700">
-        <h2 className="text-accent text-4xl mb-6 text-center">Contact Me</h2>
+        <h2 className="text-5xl lg:text-6xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-br from-primary to-accent pb-5 font-serif">Contact Me</h2>
         <form id = "contact-form"ref={form} onSubmit={sendEmail} className="flex flex-col space-y-4">
           <div>
             <label className="block text-lg font-medium text-accent">Name</label>
