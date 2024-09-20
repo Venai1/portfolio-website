@@ -26,7 +26,7 @@ const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover z-[1]" // Set z-index to 1 for the video
         style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
       >
-        <source src="/2ndblackhole.mp4" type="video/mp4" />
+        <source src="/blackhole.mp4" type="video/mp4" />
       </video>
 
       {/* Content over the video */}

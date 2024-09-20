@@ -14,7 +14,7 @@ const config: Config = {
     extend: {
       backgroundImage: { 
         'light-theme': 'radial-gradient(125% 125% at 50% 10%, #f0f0f0 40%, #d0d0d0 100%)',
-        'dark-theme': 'radial-gradient(125% 125% at 50% 10%, #000 50%, #63e 100%)',
+        'dark-theme': 'radial-gradient(125% 125% at 50% 10%, #030014 50%, #63e 100%)',
         'sunset-theme': 'radial-gradient(125% 125% at 50% 10%, #001133 30%, #ff5f6d 100%)',
         'retro-theme': 'radial-gradient(125% 125% at 50% 10%, #f0f0f0 40%, #0047AB 100%)',
       },
