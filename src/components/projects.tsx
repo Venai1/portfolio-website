@@ -38,7 +38,7 @@ const Projects = () => {
           <ProjectCard
           src = {groceryListImage.src}
           title = "Grocery List App"
-          technologies = "C++ | Unreal Engine"
+          technologies = "Java | JUnit | SQL | Android Studio"
           icon={GithubLogo.src}
           link = {"https://github.com/Venai1/grocery-list-app/tree/main"}
           description="
