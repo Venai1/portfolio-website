@@ -19,9 +19,9 @@ export default function Home() {
     <StarsCanvas />
     <HeroSection/>
     <AboutMe/>
-    <TimelineDemo/>
     <Skills/>
     <Projects/>
+    <TimelineDemo/>
     <ContactUs/>
     </main>
   );
